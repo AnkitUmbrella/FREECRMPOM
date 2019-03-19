@@ -1,0 +1,25 @@
+<?xml version = "1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="FREE CRM POM FRAMEWORK">
+
+ <listeners>
+		<listener class-name="com.crm.qa.extentreport.ExtentReportListener" />
+	</listeners>
+	
+	
+<test name="EXECUTING ALL TESTS">
+
+    <classes>
+         <class name="com.crm.qa.testcases.LoginPageTest" />  
+          
+          <class name="com.crm.qa.testcases.HomepageTest" />
+         
+          <class name="com.crm.qa.testcases.ContactspageTest" />  
+          
+          
+    </classes>
+</test>
+
+
+</suite>
