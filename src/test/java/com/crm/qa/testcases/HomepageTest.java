@@ -23,18 +23,18 @@ public class HomepageTest extends TestBase {
 	 // Before each test invoke browser and Login
 	 //Execute scripts
 	 //close the browser
-//	public HomepageTest() {
-//		super();
-//		
-//	}
-//	
-//	@BeforeMethod
-//	public void setup() {
-//	  initialization();
-//	  loginp= new Loginpage();
-//	  contactpage= new Contactspage();
-//	  homepage= loginp.login(prop.getProperty("Email"), prop.getProperty("password"));
-//	}
+	public HomepageTest() {
+		super();
+		
+	}
+	
+	@BeforeMethod
+	public void setup() {
+	  initialization();
+	  loginp= new Loginpage();
+	  contactpage= new Contactspage();
+	  homepage= loginp.login(prop.getProperty("Email"), prop.getProperty("password"));
+	}
 	
 	
 	@Test(priority=1)
