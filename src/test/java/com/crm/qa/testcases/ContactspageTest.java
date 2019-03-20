@@ -31,12 +31,10 @@ public class ContactspageTest extends TestBase{
 	public void setup() {
 	  initialization();
 	  loginp= new Loginpage();
-	 // contactpage=new Contactspage();
-	//  homepage=new Homepage();
+	  contactpage=new Contactspage();
+	  homepage=new Homepage();
 	  homepage= loginp.login(prop.getProperty("Email"), prop.getProperty("password"));
 	  contactpage=homepage.contactsclick();
-	  
-	  
 	  
 	}
 	
@@ -56,19 +54,19 @@ public class ContactspageTest extends TestBase{
 		boolean act= contactpage.Actionscheck();
 		Thread.sleep(2000);
 		Assert.assertEquals(act, true, "Error in Actiontest");
-		APP_LOGS.debug("Actions test");
+		//APP_LOGS.debug("Actions test");
 	}
 	
 	
 	@Test(priority=3)
 	public void driverTitleTest() {
 		String pagetitle= contactpage.getpagetitle();
-		Assert.assertEquals(pagetitle, "Cogmento CRM");
-		APP_LOGS.debug("Contacts Title Test");
+		Assert.assertEquals(pagetitle, "CRM");
+		//APP_LOGS.debug("Contacts Title Test");
 	}
 	
 	
-	/*
+	
 	@DataProvider
 	public Iterator<Object[]> getdata() {
 		
@@ -87,7 +85,7 @@ public class ContactspageTest extends TestBase{
 		Takesscreenshot(driver);
 	}
 	
-*/
+
 	
 	@AfterMethod
 	public void teardown() {

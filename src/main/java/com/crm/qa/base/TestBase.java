@@ -10,7 +10,7 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Logger;
+//import org.apache.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -23,7 +23,7 @@ public class TestBase {
 
 	public static WebDriver driver;
 	public static Properties prop=new Properties();
-	public static Logger APP_LOGS = Logger.getLogger("devpinoyLogger");
+//	public static Logger APP_LOGS = Logger.getLogger("devpinoyLogger");
 	
 	
 	
@@ -41,7 +41,7 @@ public class TestBase {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		APP_LOGS.debug("File loaded to read");
+	//	APP_LOGS.debug("File loaded to read");
 		
 	}
 
@@ -59,14 +59,14 @@ public class TestBase {
                
 	    }
 	    
-	    APP_LOGS.debug("Launch Browser");
+	  //  APP_LOGS.debug("Launch Browser");
 	          driver.manage().window().maximize();
 			  driver.manage().deleteAllCookies();
 			  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			  driver.manage().timeouts().pageLoadTimeout(70, TimeUnit.SECONDS);
 			  
 			  driver.get(prop.getProperty("url"));
-			  APP_LOGS.debug("Launch URL");
+			//  APP_LOGS.debug("Launch URL");
 	}
 	
 	public static void Takesscreenshot(WebDriver driver) throws IOException, InterruptedException {
@@ -74,7 +74,7 @@ public class TestBase {
         File dest= new File("D:\\temp\\screenshot_"+timestamp()+".png");
         FileUtils.copyFile(scr, dest);
         Thread.sleep(3000);
-        APP_LOGS.debug("Screenshot Taken");
+       // APP_LOGS.debug("Screenshot Taken");
     }
 
     public static String timestamp() {

@@ -8,17 +8,17 @@
 	</listeners>
 	
 	
-<test name="EXECUTING ALL TESTS">
+<test name="TESTS">
 
     <classes>
+          
          <class name="com.crm.qa.testcases.LoginPageTest" />  
-          
           <class name="com.crm.qa.testcases.HomepageTest" />
+          <class name="com.crm.qa.testcases.ContactspageTest" /> 
          
-          <class name="com.crm.qa.testcases.ContactspageTest" />  
-          
-          
+         
     </classes>
+    
 </test>
 
 

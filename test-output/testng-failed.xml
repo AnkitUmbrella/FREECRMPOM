@@ -1,32 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [FREE CRM POM FRAMEWORK]">
-  <listeners>
-    <listener class-name="com.crm.qa.extentreport.ExtentReportListener"/>
-  </listeners>
-  <test thread-count="5" name="EXECUTING ALL TESTS(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.crm.qa.testcases.LoginPageTest">
-        <methods>
-          <include name="setup"/>
-          <include name="teardown"/>
-          <include name="LoginButtonTest"/>
-        </methods>
-      </class> <!-- com.crm.qa.testcases.LoginPageTest -->
       <class name="com.crm.qa.testcases.ContactspageTest">
         <methods>
-          <include name="LabelCheckTest"/>
+          <include name="driverTitleTest"/>
           <include name="teardown"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.crm.qa.testcases.ContactspageTest -->
-      <class name="com.crm.qa.testcases.HomepageTest">
-        <methods>
-          <include name="setup"/>
-          <include name="GettitleTest"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- com.crm.qa.testcases.HomepageTest -->
     </classes>
-  </test> <!-- EXECUTING ALL TESTS(failed) -->
-</suite> <!-- Failed suite [FREE CRM POM FRAMEWORK] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -5,8 +5,8 @@
     <classes>
       <class name="com.crm.qa.testcases.ContactspageTest">
         <methods>
+          <include name="driverTitleTest"/>
           <include name="teardown"/>
-          <include name="ActionTest"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.crm.qa.testcases.ContactspageTest -->

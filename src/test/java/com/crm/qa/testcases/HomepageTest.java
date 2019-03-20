@@ -41,14 +41,14 @@ public class HomepageTest extends TestBase {
 	public void GettitleTest() {
 		String title= homepage.verifytitle();
 		Assert.assertEquals(title, "Ankit Lohia");
-		APP_LOGS.debug("Title Verification");
+		//APP_LOGS.debug("Title Verification");
 	}
 	
 	@Test(priority=2)
 	public void VerifyDeallinkTest() {
 		boolean linkpresent= homepage.Verifydeallink();
 		Assert.assertEquals(linkpresent, true);
-		APP_LOGS.debug("Deal Link Verification");
+		//APP_LOGS.debug("Deal Link Verification");
 		
 	}
 	
