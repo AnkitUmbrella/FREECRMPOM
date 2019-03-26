@@ -3,23 +3,28 @@
 
 <suite name="FREE CRM POM FRAMEWORK">
 
- <listeners>
-		<listener class-name="com.crm.qa.extentreport.ExtentReportListener" />
-	</listeners>
-	
-	
-<test name="TESTS">
-
-    <classes>
+<test name="TEST1">
+ <classes>
           
          <class name="com.crm.qa.testcases.LoginPageTest" />  
+                 
+ </classes>
+    </test>
+
+
+<test name="TEST2">
+ <classes>
+      
           <class name="com.crm.qa.testcases.HomepageTest" />
-          <class name="com.crm.qa.testcases.ContactspageTest" /> 
-         
-         
-    </classes>
+                 
+ </classes>
+    </test>
     
-</test>
-
-
-</suite>
+    <test name="TEST3">
+ <classes>
+     <class name="com.crm.qa.testcases.ContactspageTest" /> 
+         
+ </classes>
+    </test>
+    
+    </suite>
