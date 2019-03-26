@@ -40,6 +40,7 @@ public class ContactspageTest extends TestBase{
 	
 	//driver.navigate().to("https://ui.cogmento.com/contacts/new");
 	
+	
 	@Test(priority=1)
 	public void LabelCheckTest() {
 		boolean label= contactpage.Labelcheck();

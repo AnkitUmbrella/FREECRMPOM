@@ -2,6 +2,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="FREE CRM POM FRAMEWORK">
+	<listeners>
+		<listener class-name="com.crm.qa.extentreport.ExtentReportListener" />
+	</listeners>
+
+
 
 <test name="TEST1">
  <classes>
